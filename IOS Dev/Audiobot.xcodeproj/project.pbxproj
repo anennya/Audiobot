@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC4572EA1B9B333200FC80EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572E91B9B333200FC80EA /* AppDelegate.swift */; };
+		DC4572EC1B9B333200FC80EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572EB1B9B333200FC80EA /* ViewController.swift */; };
+		DC4572EF1B9B333200FC80EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4572ED1B9B333200FC80EA /* Main.storyboard */; };
+		DC4572F11B9B333200FC80EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4572F01B9B333200FC80EA /* Images.xcassets */; };
+		DC4572F41B9B333200FC80EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4572F21B9B333200FC80EA /* LaunchScreen.xib */; };
+		DC4573001B9B333200FC80EA /* AudiobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572FF1B9B333200FC80EA /* AudiobotTests.swift */; };
+		DC45730A1B9B392500FC80EA /* Button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4573091B9B392500FC80EA /* Button.jpg */; };
+		DC45730C1B9B39E700FC80EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45730B1B9B39E700FC80EA /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC4572FA1B9B333200FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4572DC1B9B333200FC80EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4572E31B9B333200FC80EA;
+			remoteInfo = Audiobot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC4572E41B9B333200FC80EA /* Audiobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4572E81B9B333200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4572E91B9B333200FC80EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC4572EB1B9B333200FC80EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC4572EE1B9B333200FC80EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC4572F01B9B333200FC80EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC4572F31B9B333200FC80EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4572FE1B9B333200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4572FF1B9B333200FC80EA /* AudiobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobotTests.swift; sourceTree = "<group>"; };
+		DC4573091B9B392500FC80EA /* Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Button.jpg; path = ../../../Downloads/Button.jpg; sourceTree = "<group>"; };
+		DC45730B1B9B39E700FC80EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC4572E11B9B333200FC80EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC45730C1B9B39E700FC80EA /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4572F61B9B333200FC80EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC4572DB1B9B333200FC80EA = {
+			isa = PBXGroup;
+			children = (
+				DC45730B1B9B39E700FC80EA /* AVFoundation.framework */,
+				DC4572E61B9B333200FC80EA /* Audiobot */,
+				DC4572FC1B9B333200FC80EA /* AudiobotTests */,
+				DC4572E51B9B333200FC80EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4572E51B9B333200FC80EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4572E41B9B333200FC80EA /* Audiobot.app */,
+				DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4572E61B9B333200FC80EA /* Audiobot */ = {
+			isa = PBXGroup;
+			children = (
+				DC4572E91B9B333200FC80EA /* AppDelegate.swift */,
+				DC4572EB1B9B333200FC80EA /* ViewController.swift */,
+				DC4572ED1B9B333200FC80EA /* Main.storyboard */,
+				DC4572F01B9B333200FC80EA /* Images.xcassets */,
+				DC4572F21B9B333200FC80EA /* LaunchScreen.xib */,
+				DC4572E71B9B333200FC80EA /* Supporting Files */,
+			);
+			path = Audiobot;
+			sourceTree = "<group>";
+		};
+		DC4572E71B9B333200FC80EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573091B9B392500FC80EA /* Button.jpg */,
+				DC4572E81B9B333200FC80EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC4572FC1B9B333200FC80EA /* AudiobotTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4572FF1B9B333200FC80EA /* AudiobotTests.swift */,
+				DC4572FD1B9B333200FC80EA /* Supporting Files */,
+			);
+			path = AudiobotTests;
+			sourceTree = "<group>";
+		};
+		DC4572FD1B9B333200FC80EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4572FE1B9B333200FC80EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4572E31B9B333200FC80EA /* Audiobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4573031B9B333200FC80EA /* Build configuration list for PBXNativeTarget "Audiobot" */;
+			buildPhases = (
+				DC4572E01B9B333200FC80EA /* Sources */,
+				DC4572E11B9B333200FC80EA /* Frameworks */,
+				DC4572E21B9B333200FC80EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audiobot;
+			productName = Audiobot;
+			productReference = DC4572E41B9B333200FC80EA /* Audiobot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC4572F81B9B333200FC80EA /* AudiobotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4573061B9B333200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotTests" */;
+			buildPhases = (
+				DC4572F51B9B333200FC80EA /* Sources */,
+				DC4572F61B9B333200FC80EA /* Frameworks */,
+				DC4572F71B9B333200FC80EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4572FB1B9B333200FC80EA /* PBXTargetDependency */,
+			);
+			name = AudiobotTests;
+			productName = AudiobotTests;
+			productReference = DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC4572DC1B9B333200FC80EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Arjun Sundararajan";
+				TargetAttributes = {
+					DC4572E31B9B333200FC80EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DC4572F81B9B333200FC80EA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DC4572E31B9B333200FC80EA;
+					};
+				};
+			};
+			buildConfigurationList = DC4572DF1B9B333200FC80EA /* Build configuration list for PBXProject "Audiobot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC4572DB1B9B333200FC80EA;
+			productRefGroup = DC4572E51B9B333200FC80EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4572E31B9B333200FC80EA /* Audiobot */,
+				DC4572F81B9B333200FC80EA /* AudiobotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4572E21B9B333200FC80EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4572EF1B9B333200FC80EA /* Main.storyboard in Resources */,
+				DC45730A1B9B392500FC80EA /* Button.jpg in Resources */,
+				DC4572F41B9B333200FC80EA /* LaunchScreen.xib in Resources */,
+				DC4572F11B9B333200FC80EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4572F71B9B333200FC80EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC4572E01B9B333200FC80EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4572EC1B9B333200FC80EA /* ViewController.swift in Sources */,
+				DC4572EA1B9B333200FC80EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4572F51B9B333200FC80EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4573001B9B333200FC80EA /* AudiobotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC4572FB1B9B333200FC80EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4572E31B9B333200FC80EA /* Audiobot */;
+			targetProxy = DC4572FA1B9B333200FC80EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC4572ED1B9B333200FC80EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4572EE1B9B333200FC80EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC4572F21B9B333200FC80EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4572F31B9B333200FC80EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4573011B9B333200FC80EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC4573021B9B333200FC80EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC4573041B9B333200FC80EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audiobot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC4573051B9B333200FC80EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audiobot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC4573071B9B333200FC80EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudiobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiobot.app/Audiobot";
+			};
+			name = Debug;
+		};
+		DC4573081B9B333200FC80EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudiobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiobot.app/Audiobot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC4572DF1B9B333200FC80EA /* Build configuration list for PBXProject "Audiobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4573011B9B333200FC80EA /* Debug */,
+				DC4573021B9B333200FC80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4573031B9B333200FC80EA /* Build configuration list for PBXNativeTarget "Audiobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4573041B9B333200FC80EA /* Debug */,
+				DC4573051B9B333200FC80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC4573061B9B333200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4573071B9B333200FC80EA /* Debug */,
+				DC4573081B9B333200FC80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC4572DC1B9B333200FC80EA /* Project object */;
+}
