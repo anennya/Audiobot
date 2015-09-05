@@ -6,7 +6,7 @@ import json
 import pandas as pd
 import re
 import subprocess
-#Variables that contains the user credentials to access Twitter API 
+#Variable that contains the user credentials to access Twitter API 
 access_token = "14038162-tw8ldHxAIZF7RMwESoTolEgZ2sZwHLbrYpt2ojQOe"
 access_token_secret = "EePQND2dbkz44QPKzOVjbUU9xfkyVpXOF2gZ5rBx0GtLR"
 consumer_key = "SXvD2wyU1FwHXKsBQazcO1dhX"
