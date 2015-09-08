@@ -15,6 +15,13 @@
 		DC4573001B9B333200FC80EA /* AudiobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572FF1B9B333200FC80EA /* AudiobotTests.swift */; };
 		DC45730A1B9B392500FC80EA /* Button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4573091B9B392500FC80EA /* Button.jpg */; };
 		DC45730C1B9B39E700FC80EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45730B1B9B39E700FC80EA /* AVFoundation.framework */; };
+		DC4573D01B9F19A200FC80EA /* AudiobotFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4573CF1B9F19A200FC80EA /* AudiobotFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC4573D61B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; };
+		DC4573DF1B9F19A200FC80EA /* AudiobotFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4573DE1B9F19A200FC80EA /* AudiobotFrameworkTests.swift */; };
+		DC4573E21B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; };
+		DC4573E31B9F19A200FC80EA /* AudiobotFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC4573FA1B9F1D9300FC80EA /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DC4573FB1B9F1E0A00FC80EA /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +32,71 @@
 			remoteGlobalIDString = DC4572E31B9B333200FC80EA;
 			remoteInfo = Audiobot;
 		};
+		DC4573D71B9F19A200FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4572DC1B9B333200FC80EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4573CA1B9F19A200FC80EA;
+			remoteInfo = AudiobotFramework;
+		};
+		DC4573D91B9F19A200FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4572DC1B9B333200FC80EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4572E31B9B333200FC80EA;
+			remoteInfo = Audiobot;
+		};
+		DC4573E01B9F19A200FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4572DC1B9B333200FC80EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4573CA1B9F19A200FC80EA;
+			remoteInfo = AudiobotFramework;
+		};
+		DC4573F21B9F1CE600FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		DC4573F41B9F1CE600FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		DC4573F61B9F1CE600FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		DC4573F81B9F1CE600FC80EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC4573E71B9F19A200FC80EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC4573FB1B9F1E0A00FC80EA /* SwifteriOS.framework in Embed Frameworks */,
+				DC4573E31B9F19A200FC80EA /* AudiobotFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC4572E41B9B333200FC80EA /* Audiobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,8 +109,15 @@
 		DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4572FE1B9B333200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4572FF1B9B333200FC80EA /* AudiobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobotTests.swift; sourceTree = "<group>"; };
-		DC4573091B9B392500FC80EA /* Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Button.jpg; path = ../../../Downloads/Button.jpg; sourceTree = "<group>"; };
+		DC4573091B9B392500FC80EA /* Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button.jpg; sourceTree = "<group>"; };
 		DC45730B1B9B39E700FC80EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudiobotFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4573CE1B9F19A200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4573CF1B9F19A200FC80EA /* AudiobotFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudiobotFramework.h; sourceTree = "<group>"; };
+		DC4573D51B9F19A200FC80EA /* AudiobotFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiobotFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4573DD1B9F19A200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4573DE1B9F19A200FC80EA /* AudiobotFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobotFrameworkTests.swift; sourceTree = "<group>"; };
+		DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4573FA1B9F1D9300FC80EA /* SwifteriOS.framework in Frameworks */,
+				DC4573E21B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */,
 				DC45730C1B9B39E700FC80EA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +135,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4573C71B9F19A200FC80EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4573D21B9F19A200FC80EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4573D61B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +162,10 @@
 				DC45730B1B9B39E700FC80EA /* AVFoundation.framework */,
 				DC4572E61B9B333200FC80EA /* Audiobot */,
 				DC4572FC1B9B333200FC80EA /* AudiobotTests */,
+				DC4573CC1B9F19A200FC80EA /* AudiobotFramework */,
+				DC4573DB1B9F19A200FC80EA /* AudiobotFrameworkTests */,
 				DC4572E51B9B333200FC80EA /* Products */,
+				DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +174,8 @@
 			children = (
 				DC4572E41B9B333200FC80EA /* Audiobot.app */,
 				DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */,
+				DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */,
+				DC4573D51B9F19A200FC80EA /* AudiobotFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +219,63 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DC4573CC1B9F19A200FC80EA /* AudiobotFramework */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573CF1B9F19A200FC80EA /* AudiobotFramework.h */,
+				DC4573CD1B9F19A200FC80EA /* Supporting Files */,
+			);
+			path = AudiobotFramework;
+			sourceTree = "<group>";
+		};
+		DC4573CD1B9F19A200FC80EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573CE1B9F19A200FC80EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC4573DB1B9F19A200FC80EA /* AudiobotFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573DE1B9F19A200FC80EA /* AudiobotFrameworkTests.swift */,
+				DC4573DC1B9F19A200FC80EA /* Supporting Files */,
+			);
+			path = AudiobotFrameworkTests;
+			sourceTree = "<group>";
+		};
+		DC4573DC1B9F19A200FC80EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573DD1B9F19A200FC80EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC4573EC1B9F1CE500FC80EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4573F31B9F1CE600FC80EA /* SwifterDemoiOS.app */,
+				DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */,
+				DC4573F71B9F1CE600FC80EA /* SwifterMac.framework */,
+				DC4573F91B9F1CE600FC80EA /* SwifterDemoMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC4573C81B9F19A200FC80EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4573D01B9F19A200FC80EA /* AudiobotFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DC4572E31B9B333200FC80EA /* Audiobot */ = {
@@ -129,10 +285,12 @@
 				DC4572E01B9B333200FC80EA /* Sources */,
 				DC4572E11B9B333200FC80EA /* Frameworks */,
 				DC4572E21B9B333200FC80EA /* Resources */,
+				DC4573E71B9F19A200FC80EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC4573E11B9F19A200FC80EA /* PBXTargetDependency */,
 			);
 			name = Audiobot;
 			productName = Audiobot;
@@ -157,6 +315,43 @@
 			productReference = DC4572F91B9B333200FC80EA /* AudiobotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DC4573CA1B9F19A200FC80EA /* AudiobotFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4573E41B9F19A200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotFramework" */;
+			buildPhases = (
+				DC4573C61B9F19A200FC80EA /* Sources */,
+				DC4573C71B9F19A200FC80EA /* Frameworks */,
+				DC4573C81B9F19A200FC80EA /* Headers */,
+				DC4573C91B9F19A200FC80EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudiobotFramework;
+			productName = AudiobotFramework;
+			productReference = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC4573D41B9F19A200FC80EA /* AudiobotFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4573E81B9F19A200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotFrameworkTests" */;
+			buildPhases = (
+				DC4573D11B9F19A200FC80EA /* Sources */,
+				DC4573D21B9F19A200FC80EA /* Frameworks */,
+				DC4573D31B9F19A200FC80EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4573D81B9F19A200FC80EA /* PBXTargetDependency */,
+				DC4573DA1B9F19A200FC80EA /* PBXTargetDependency */,
+			);
+			name = AudiobotFrameworkTests;
+			productName = AudiobotFrameworkTests;
+			productReference = DC4573D51B9F19A200FC80EA /* AudiobotFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +368,13 @@
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = DC4572E31B9B333200FC80EA;
 					};
+					DC4573CA1B9F19A200FC80EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DC4573D41B9F19A200FC80EA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DC4572E31B9B333200FC80EA;
+					};
 				};
 			};
 			buildConfigurationList = DC4572DF1B9B333200FC80EA /* Build configuration list for PBXProject "Audiobot" */;
@@ -186,13 +388,52 @@
 			mainGroup = DC4572DB1B9B333200FC80EA;
 			productRefGroup = DC4572E51B9B333200FC80EA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DC4573EC1B9F1CE500FC80EA /* Products */;
+					ProjectRef = DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DC4572E31B9B333200FC80EA /* Audiobot */,
 				DC4572F81B9B333200FC80EA /* AudiobotTests */,
+				DC4573CA1B9F19A200FC80EA /* AudiobotFramework */,
+				DC4573D41B9F19A200FC80EA /* AudiobotFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DC4573F31B9F1CE600FC80EA /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = DC4573F21B9F1CE600FC80EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = DC4573F41B9F1CE600FC80EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC4573F71B9F1CE600FC80EA /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = DC4573F61B9F1CE600FC80EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC4573F91B9F1CE600FC80EA /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = DC4573F81B9F1CE600FC80EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DC4572E21B9B333200FC80EA /* Resources */ = {
@@ -207,6 +448,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DC4572F71B9B333200FC80EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4573C91B9F19A200FC80EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4573D31B9F19A200FC80EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +488,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC4573C61B9F19A200FC80EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4573D11B9F19A200FC80EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4573DF1B9F19A200FC80EA /* AudiobotFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +510,21 @@
 			isa = PBXTargetDependency;
 			target = DC4572E31B9B333200FC80EA /* Audiobot */;
 			targetProxy = DC4572FA1B9B333200FC80EA /* PBXContainerItemProxy */;
+		};
+		DC4573D81B9F19A200FC80EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4573CA1B9F19A200FC80EA /* AudiobotFramework */;
+			targetProxy = DC4573D71B9F19A200FC80EA /* PBXContainerItemProxy */;
+		};
+		DC4573DA1B9F19A200FC80EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4572E31B9B333200FC80EA /* Audiobot */;
+			targetProxy = DC4573D91B9F19A200FC80EA /* PBXContainerItemProxy */;
+		};
+		DC4573E11B9F19A200FC80EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4573CA1B9F19A200FC80EA /* AudiobotFramework */;
+			targetProxy = DC4573E01B9F19A200FC80EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +683,80 @@
 			};
 			name = Release;
 		};
+		DC4573E51B9F19A200FC80EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudiobotFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC4573E61B9F19A200FC80EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AudiobotFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC4573E91B9F19A200FC80EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudiobotFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiobot.app/Audiobot";
+			};
+			name = Debug;
+		};
+		DC4573EA1B9F19A200FC80EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudiobotFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiobot.app/Audiobot";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,12 +776,30 @@
 				DC4573051B9B333200FC80EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4573061B9B333200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC4573071B9B333200FC80EA /* Debug */,
 				DC4573081B9B333200FC80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4573E41B9F19A200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4573E51B9F19A200FC80EA /* Debug */,
+				DC4573E61B9F19A200FC80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC4573E81B9F19A200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4573E91B9F19A200FC80EA /* Debug */,
+				DC4573EA1B9F19A200FC80EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

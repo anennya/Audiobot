@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AudiobotFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>DC4572F81B9B333200FC80EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC4573CA1B9F19A200FC80EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC4573D41B9F19A200FC80EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

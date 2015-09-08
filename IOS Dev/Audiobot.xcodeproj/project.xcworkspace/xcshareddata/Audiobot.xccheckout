@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>89B87900-705F-489F-8EC6-1B026EA28104</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Audiobot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B91DE0246EAF60629A514E9496B8752B576A8E6</key>
+		<string>https://github.com/anennya/Audiobot.git</string>
+		<key>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</key>
+		<string>https://github.com/mattdonnelly/Swifter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS Dev/Audiobot.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B91DE0246EAF60629A514E9496B8752B576A8E6</key>
+		<string>../../..</string>
+		<key>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</key>
+		<string>../../../../Swifter</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anennya/Audiobot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B91DE0246EAF60629A514E9496B8752B576A8E6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B91DE0246EAF60629A514E9496B8752B576A8E6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Audiobot%20project</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Swifter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

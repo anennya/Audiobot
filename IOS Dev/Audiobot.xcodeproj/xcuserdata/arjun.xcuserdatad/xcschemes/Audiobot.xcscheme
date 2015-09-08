@@ -34,6 +34,20 @@
                ReferencedContainer = "container:Audiobot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC4573D41B9F19A200FC80EA"
+               BuildableName = "AudiobotFrameworkTests.xctest"
+               BlueprintName = "AudiobotFrameworkTests"
+               ReferencedContainer = "container:Audiobot.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "DC4572F81B9B333200FC80EA"
                BuildableName = "AudiobotTests.xctest"
                BlueprintName = "AudiobotTests"
+               ReferencedContainer = "container:Audiobot.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC4573D41B9F19A200FC80EA"
+               BuildableName = "AudiobotFrameworkTests.xctest"
+               BlueprintName = "AudiobotFrameworkTests"
                ReferencedContainer = "container:Audiobot.xcodeproj">
             </BuildableReference>
          </TestableReference>
