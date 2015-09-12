@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC4572EA1B9B333200FC80EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572E91B9B333200FC80EA /* AppDelegate.swift */; };
-		DC4572EC1B9B333200FC80EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4572EB1B9B333200FC80EA /* ViewController.swift */; };
 		DC4572EF1B9B333200FC80EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4572ED1B9B333200FC80EA /* Main.storyboard */; };
 		DC4572F11B9B333200FC80EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4572F01B9B333200FC80EA /* Images.xcassets */; };
 		DC4572F41B9B333200FC80EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4572F21B9B333200FC80EA /* LaunchScreen.xib */; };
@@ -18,10 +17,11 @@
 		DC4573D01B9F19A200FC80EA /* AudiobotFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4573CF1B9F19A200FC80EA /* AudiobotFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC4573D61B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; };
 		DC4573DF1B9F19A200FC80EA /* AudiobotFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4573DE1B9F19A200FC80EA /* AudiobotFrameworkTests.swift */; };
-		DC4573E21B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; };
-		DC4573E31B9F19A200FC80EA /* AudiobotFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573CB1B9F19A200FC80EA /* AudiobotFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC4573FA1B9F1D9300FC80EA /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DC4573FB1B9F1E0A00FC80EA /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4573F51B9F1CE600FC80EA /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC4574021BA1D03400FC80EA /* TtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4574011BA1D03400FC80EA /* TtsViewController.swift */; };
+		DC4574041BA1D25800FC80EA /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4574031BA1D25800FC80EA /* TwitterLoginViewController.swift */; };
+		DC4574061BA31A0500FC80EA /* ButtonTwitterNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4574051BA31A0500FC80EA /* ButtonTwitterNormal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +45,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = DC4572E31B9B333200FC80EA;
 			remoteInfo = Audiobot;
-		};
-		DC4573E01B9F19A200FC80EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC4572DC1B9B333200FC80EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC4573CA1B9F19A200FC80EA;
-			remoteInfo = AudiobotFramework;
 		};
 		DC4573F21B9F1CE600FC80EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -91,7 +84,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DC4573FB1B9F1E0A00FC80EA /* SwifteriOS.framework in Embed Frameworks */,
-				DC4573E31B9F19A200FC80EA /* AudiobotFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +110,10 @@
 		DC4573DD1B9F19A200FC80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4573DE1B9F19A200FC80EA /* AudiobotFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobotFrameworkTests.swift; sourceTree = "<group>"; };
 		DC4573EB1B9F1CE500FC80EA /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		DC4573FF1BA1C24F00FC80EA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		DC4574011BA1D03400FC80EA /* TtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtsViewController.swift; sourceTree = "<group>"; };
+		DC4574031BA1D25800FC80EA /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
+		DC4574051BA31A0500FC80EA /* ButtonTwitterNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTwitterNormal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +122,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4573FA1B9F1D9300FC80EA /* SwifteriOS.framework in Frameworks */,
-				DC4573E21B9F19A200FC80EA /* AudiobotFramework.framework in Frameworks */,
 				DC45730C1B9B39E700FC80EA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,8 +180,11 @@
 			children = (
 				DC4572E91B9B333200FC80EA /* AppDelegate.swift */,
 				DC4572EB1B9B333200FC80EA /* ViewController.swift */,
+				DC4574031BA1D25800FC80EA /* TwitterLoginViewController.swift */,
 				DC4572ED1B9B333200FC80EA /* Main.storyboard */,
+				DC4574011BA1D03400FC80EA /* TtsViewController.swift */,
 				DC4572F01B9B333200FC80EA /* Images.xcassets */,
+				DC4573FF1BA1C24F00FC80EA /* AuthViewController.swift */,
 				DC4572F21B9B333200FC80EA /* LaunchScreen.xib */,
 				DC4572E71B9B333200FC80EA /* Supporting Files */,
 			);
@@ -196,6 +194,7 @@
 		DC4572E71B9B333200FC80EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC4574051BA31A0500FC80EA /* ButtonTwitterNormal.png */,
 				DC4573091B9B392500FC80EA /* Button.jpg */,
 				DC4572E81B9B333200FC80EA /* Info.plist */,
 			);
@@ -290,7 +289,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC4573E11B9F19A200FC80EA /* PBXTargetDependency */,
 			);
 			name = Audiobot;
 			productName = Audiobot;
@@ -443,6 +441,7 @@
 				DC4572EF1B9B333200FC80EA /* Main.storyboard in Resources */,
 				DC45730A1B9B392500FC80EA /* Button.jpg in Resources */,
 				DC4572F41B9B333200FC80EA /* LaunchScreen.xib in Resources */,
+				DC4574061BA31A0500FC80EA /* ButtonTwitterNormal.png in Resources */,
 				DC4572F11B9B333200FC80EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4572EC1B9B333200FC80EA /* ViewController.swift in Sources */,
+				DC4574021BA1D03400FC80EA /* TtsViewController.swift in Sources */,
+				DC4574041BA1D25800FC80EA /* TwitterLoginViewController.swift in Sources */,
 				DC4572EA1B9B333200FC80EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,11 +520,6 @@
 			isa = PBXTargetDependency;
 			target = DC4572E31B9B333200FC80EA /* Audiobot */;
 			targetProxy = DC4573D91B9F19A200FC80EA /* PBXContainerItemProxy */;
-		};
-		DC4573E11B9F19A200FC80EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC4573CA1B9F19A200FC80EA /* AudiobotFramework */;
-			targetProxy = DC4573E01B9F19A200FC80EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

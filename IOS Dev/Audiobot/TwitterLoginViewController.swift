@@ -1,22 +1,21 @@
 //
-//  ViewController.swift
+//  TwitterLoginViewController.swift
 //  Audiobot
 //
-//  Created by Arjun Sundararajan on 9/5/15.
+//  Created by Arjun Sundararajan on 9/10/15.
 //  Copyright (c) 2015 Arjun Sundararajan. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
-import SwifteriOS
 import Accounts
 import Social
 import SwifteriOS
 
 
-class FirstViewController: UIViewController {
+class TwitterLoginViewController: UIViewController {
+
     var swifter: Swifter
-    var tweets : [JSONValue] = []
+    
     
     // Default to using the iOS account framework for handling twitter auth
     let useACAccount = true
@@ -26,8 +25,27 @@ class FirstViewController: UIViewController {
         super.init(coder: aDecoder)
     }
 
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    @IBAction func twitterLogin(sender: UIButton) {
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func alertWithTitle(title: String, message: String) {
+        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+
+    @IBAction func LoginTwitter(sender: UIButton) {
         let failureHandler: ((NSError) -> Void) = {
             error in
             
@@ -71,58 +89,35 @@ class FirstViewController: UIViewController {
         }
     }
     
-    
-    @IBOutlet weak var textView: UITextView!
-    let synth = AVSpeechSynthesizer()
-    var myUtterance = AVSpeechUtterance(string: "")
-    
-    @IBAction func textToSpeech(sender: UIButton) {
-        myUtterance =  AVSpeechUtterance(string: textView.text)
-        myUtterance.rate = 0.2
-        synth.speakUtterance(myUtterance)
-
-    }
-    
     func fetchTwitterHomeStream() {
-        let failureHandler: ((NSError) -> Void) = {
-            error in
-            self.alertWithTitle("Error", message: error.localizedDescription)
-        }
-        
-        self.swifter.getStatusesHomeTimelineWithCount(20, success: {
-            (statuses: [JSONValue]?) in
-            
-            // Successfully fetched timeline, so lets create and push the table view
-           // let tweetsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("TweetsViewController") as! TweetsViewController
-            
-            if statuses != nil {
-                self.tweets = statuses!
-                self.myUtterance = AVSpeechUtterance(string: self.tweets[1]["text"].string)
-            }
-            
-            }, failure: failureHandler)
-        
-    }
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    let failureHandler: ((NSError) -> Void) = {
+    error in
+    self.alertWithTitle("Error", message: error.localizedDescription)
     }
     
-    func alertWithTitle(title: String, message: String) {
-        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+    self.swifter.getStatusesHomeTimelineWithCount(20, success: {
+    (statuses: [JSONValue]?) in
+    
+    // Successfully fetched timeline, so lets create and push the table view
+    let ttsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("TtsViewController") as! TtsViewController
+    
+    if statuses != nil {
+    ttsViewController.tweets = statuses!
+    self.presentViewController(ttsViewController, animated: true, completion: nil)
+    }
+    
+    }, failure: failureHandler)
     }
 
+    /*
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
 
 }
-

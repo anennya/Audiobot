@@ -1,33 +1,56 @@
 //
-//  ViewController.swift
+//  AuthViewController.swift
 //  Audiobot
 //
-//  Created by Arjun Sundararajan on 9/5/15.
+//  Created by Arjun Sundararajan on 9/10/15.
 //  Copyright (c) 2015 Arjun Sundararajan. All rights reserved.
 //
 
+import Foundation
+
+//
+//  AuthViewController.swift
+//  SwifterDemoiOS
+//
+//  Copyright (c) 2014 Matt Donnelly.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
+
 import UIKit
-import AVFoundation
-import SwifteriOS
 import Accounts
 import Social
 import SwifteriOS
 
-
-class FirstViewController: UIViewController {
+class LoginViewController: UIViewController {
+    
     var swifter: Swifter
-    var tweets : [JSONValue] = []
     
     // Default to using the iOS account framework for handling twitter auth
     let useACAccount = true
     
     required init(coder aDecoder: NSCoder) {
-        self.swifter = Swifter(consumerKey: "SXvD2wyU1FwHXKsBQazcO1dhX", consumerSecret: "xnCD8hRNhkx9jvOfr4rrYHpTSO5vfHcfe7u3dPddFK2EmEZPCA")
+        self.swifter = Swifter(consumerKey: "RErEmzj7ijDkJr60ayE2gjSHT", consumerSecret: "SbS0CHk11oJdALARa7NDik0nty4pXvAxdt7aj0R5y1gNzWaNEx")
         super.init(coder: aDecoder)
     }
-
-
-    @IBAction func twitterLogin(sender: UIButton) {
+    
+    @IBAction func didTouchUpInsideLoginButton(sender: AnyObject) {
         let failureHandler: ((NSError) -> Void) = {
             error in
             
@@ -71,18 +94,6 @@ class FirstViewController: UIViewController {
         }
     }
     
-    
-    @IBOutlet weak var textView: UITextView!
-    let synth = AVSpeechSynthesizer()
-    var myUtterance = AVSpeechUtterance(string: "")
-    
-    @IBAction func textToSpeech(sender: UIButton) {
-        myUtterance =  AVSpeechUtterance(string: textView.text)
-        myUtterance.rate = 0.2
-        synth.speakUtterance(myUtterance)
-
-    }
-    
     func fetchTwitterHomeStream() {
         let failureHandler: ((NSError) -> Void) = {
             error in
@@ -93,27 +104,15 @@ class FirstViewController: UIViewController {
             (statuses: [JSONValue]?) in
             
             // Successfully fetched timeline, so lets create and push the table view
-           // let tweetsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("TweetsViewController") as! TweetsViewController
+            let tweetsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! TtsViewController
             
             if statuses != nil {
-                self.tweets = statuses!
-                self.myUtterance = AVSpeechUtterance(string: self.tweets[1]["text"].string)
+                tweetsViewController.tweets = statuses!
+                self.presentViewController(tweetsViewController, animated: true, completion: nil)
             }
             
             }, failure: failureHandler)
         
-    }
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func alertWithTitle(title: String, message: String) {
@@ -121,8 +120,5 @@ class FirstViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
-
-
-
+    
 }
-
