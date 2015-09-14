@@ -55,21 +55,44 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yay! Twitter login worked!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egh-Yw-Ev4">
                                 <rect key="frame" x="67" y="198" width="213" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-cI-FOA">
                                 <rect key="frame" x="149" y="293" width="200" height="145"/>
-                                <state key="normal" title="Button" image="Button.jpg">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Button" image="Button.jpg"/>
+                                <connections>
+                                    <action selector="TextToSpeech:" destination="zTu-Zw-sAc" eventType="touchUpInside" id="0V3-BC-0Lq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-E7-WFE">
+                                <rect key="frame" x="73" y="490" width="49" height="30"/>
+                                <state key="normal" title="PAUSE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TextToSpeech:" destination="zTu-Zw-sAc" eventType="touchUpInside" id="0V3-BC-0Lq"/>
+                                    <action selector="PauseSpeech:" destination="zTu-Zw-sAc" eventType="touchUpInside" id="ws6-mt-Gbe"/>
+                                    <action selector="TextToSpeech:" destination="zTu-Zw-sAc" eventType="touchUpInside" id="AsB-KM-Ru6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvD-o7-wa9">
+                                <rect key="frame" x="277" y="490" width="41" height="30"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopSpeech:" destination="zTu-Zw-sAc" eventType="touchUpInside" id="Jvg-Dy-bCR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="pauseBtn" destination="feQ-E7-WFE" id="WcY-hY-rxm"/>
+                        <outlet property="speakBtn" destination="kL6-cI-FOA" id="8jP-ir-0OZ"/>
+                        <outlet property="stopBtn" destination="pvD-o7-wa9" id="SXJ-aV-Le0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dK3-4g-M74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -789,6 +789,7 @@
 				DC4573E61B9F19A200FC80EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4573E81B9F19A200FC80EA /* Build configuration list for PBXNativeTarget "AudiobotFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -797,6 +798,7 @@
 				DC4573EA1B9F19A200FC80EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
