@@ -20,7 +20,7 @@ class TwitterLoginViewController: UIViewController {
     // Default to using the iOS account framework for handling twitter auth
     let useACAccount = true
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         self.swifter = Swifter(consumerKey: "SXvD2wyU1FwHXKsBQazcO1dhX", consumerSecret: "xnCD8hRNhkx9jvOfr4rrYHpTSO5vfHcfe7u3dPddFK2EmEZPCA")
         super.init(coder: aDecoder)
     }
@@ -39,7 +39,7 @@ class TwitterLoginViewController: UIViewController {
     }
     
     func alertWithTitle(title: String, message: String) {
-        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
